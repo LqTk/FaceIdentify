@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        SpeechUtility.createUtility(this, "appid=5b7e83d1");//初始化SDK 千万不能忘记写appid后边的等号  id是自己其官网上申请的
+        SpeechUtility.createUtility(this, "appid="+"讯飞申请的APPID");//初始化SDK 千万不能忘记写appid后边的等号  id是自己其官网上申请的
         faceRequest = new FaceRequest(this);
 
         mIdVerifier = IdentityVerifier.createVerifier(this, new InitListener() {
